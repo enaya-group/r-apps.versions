@@ -28,7 +28,7 @@ def get_operation_options():
     
     try:
         # Dynamically import the module based on the sim param (assume module name = sim)
-        module = importlib.import_module(sim)
+        module = importlib.import_module(sim.lower())
         
         # Assuming the class inside the module is named exactly like the sim parameter
         sim = request.args.get('sim').capitalize()

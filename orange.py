@@ -250,9 +250,8 @@ class Orange:
             "option2": "1",
             "option3": "1",
             "option4": "0895881926",
-            "option5": "0970803925",
-            "option6": "montant",
-            "option7": "password"
+            "option5": "montant",
+            "option6": "password"
         }
         return json.dumps(options)
 

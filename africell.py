@@ -1,9 +1,10 @@
-import json
+version = "1.0.0"
 
 class Africell:
     def get_retrait_options(self):
         options = {
-            "function called": "get_retrait_options",
+            "version": self.get_version_options(),
+            "function_called": "get_retrait_options",
             "ussd_code_to_invoke": "*1020#",
             "option1": "devise",
             "option2": "3",
@@ -11,11 +12,12 @@ class Africell:
             "option4": "montant",
             "option5": "password"
         }
-        return json.dumps(options)
+        return options
 
     def get_envoi_options(self):
         options = {
-            "function called": "get_envoi_options",
+            "version": self.get_version_options(),
+            "function_called": "get_envoi_options",
             "ussd_code_to_invoke": "*1020#",
             "option1": "devise",
             "option2": "1",
@@ -23,24 +25,12 @@ class Africell:
             "option4": "montant",
             "option5": "password"
         }
-        return json.dumps(options)
-
-    # def get_bureau_options(self):
-    #     options = {
-    #         "function called": "get_bureau_options",
-    #         "ussd_code_to_invoke": "*1020#",
-    #         "option1": "devise",
-    #         "option2": "1",
-    #         "option3": "1",
-    #         "option4": "numero",
-    #         "option5": "montant",
-    #         "option6": "password"
-    #     }
-    #     return json.dumps(options)
+        return options
 
     def get_verificationTauxEtExecution_options(self):
         options = {
-            "function called": "get_verificationTauxEtExecution_options",
+            "version": self.get_version_options(),
+            "function_called": "get_verificationTauxEtExecution_options",
             "ussd_code_to_invoke": "1020",
             "option1": "devise",
             "option2": "7",
@@ -48,11 +38,12 @@ class Africell:
             "option4": "montant",
             "option5": "password"
         }
-        return json.dumps(options)
+        return options
 
     def get_achat_credit_options(self):
         options = {
-            "function called": "get_achat_credit_options",
+            "version": self.get_version_options(),
+            "function_called": "get_achat_credit_options",
             "ussd_code_to_invoke": "*1020#",
             "option1": "devise",
             "option2": "2",
@@ -67,36 +58,40 @@ class Africell:
             "option5.4": "1",
             "option5.5": "password"
         }
-        return json.dumps(options)
+        return options
 
     def get_soldes_options(self):
         options = {
-            "function called": "get_soldes_options",
+            "version": self.get_version_options(),
+            "function_called": "get_soldes_options",
             "option1": ""
         }
-        return json.dumps(options)
+        return options
 
     def get_soldeMoney_options(self):
         options = {
-            "function called": "get_soldeMoney_options",
+            "version": self.get_version_options(),
+            "function_called": "get_soldeMoney_options",
             "phone_number": "Afrimoney",
             "regex_usd": "solde(.*?)USD",
             "regex_cdf": "solde(.*?)(CDF|Fc)",
             "usd_id": "USD",
             "cdf_id": "CDF"
         }
-        return json.dumps(options)
+        return options
 
     def get_cleanSoldeStr_options(self):
         options = {
-            "function called": "get_cleanSoldeStr_options",
+            "version": self.get_version_options(),
+            "function_called": "get_cleanSoldeStr_options",
             "clean_regex": "[0-9](.*?)"
         }
-        return json.dumps(options)
+        return options
 
     def get_forcer_demande_solde_options(self):
         options = {
-            "function called": "get_forcer_demande_solde_options",
+            "version": self.get_version_options(),
+            "function_called": "get_forcer_demande_solde_options",
             "ussd_code_to_invoke": "*1020#",
             "option1": "1",
             "option2": "5",
@@ -104,11 +99,12 @@ class Africell:
             "option4": "1",
             "option5": "password"
         }
-        return json.dumps(options)
+        return options
 
     def get_forcer_demande_solde_cdf_options(self):
         options = {
-            "function called": "get_forcer_demande_solde_cdf_options",
+            "version": self.get_version_options(),
+            "function_called": "get_forcer_demande_solde_cdf_options",
             "ussd_code_to_invoke": "*1020#",
             "option1": "2",
             "option2": "5",
@@ -116,11 +112,12 @@ class Africell:
             "option4": "1",
             "option5": "password"
         }
-        return json.dumps(options)
+        return options
 
     def get_achat_forfait_appel_options(self):
         options = {
-            "function called": "get_achat_forfait_appel_options",
+            "version": self.get_version_options(),
+            "function_called": "get_achat_forfait_appel_options",
             "ussd_code_to_invoke_1": "*111#",
             "ussd_code_to_invoke_2": "*1020#",
             "option1.1": "1",
@@ -133,11 +130,12 @@ class Africell:
             "option2.5": "",
             "option2.6": ""
         }
-        return json.dumps(options)
+        return options
 
     def get_achat_forfait_internet_options(self):
         options = {
-            "function called": "get_achat_forfait_appel_options",
+            "version": self.get_version_options(),
+            "function_called": "get_achat_forfait_appel_options",
             "ussd_code_to_invoke_1": "*111#",
             "ussd_code_to_invoke_2": "*1020#",
             "option1": "1",
@@ -150,71 +148,79 @@ class Africell:
             "option4.3": "2",
             "option4.4": "1"
         }
-        return json.dumps(options)
+        return options
 
     def get_partager_vos_megas_options(self):
         options = {
-            "function called": "get_partager_vos_megas_options",
+            "version": self.get_version_options(),
+            "function_called": "get_partager_vos_megas_options",
             "ussd_code_to_invoke": "",
             "option1": ""
         }
-        return json.dumps(options)
+        return options
 
     def get_partager_vos_minutes_options(self):
         options = {
-            "function called": "get_partager_vos_minutes_options",
+            "version": self.get_version_options(),
+            "function_called": "get_partager_vos_minutes_options",
             "ussd_code_to_invoke": "",
             "option1": ""
         }
-        return json.dumps(options)
+        return options
 
     def get_envoyer_des_unites_options(self):
         options = {
-            "function called": "get_envoyer_des_unites_options",
+            "version": self.get_version_options(),
+            "function_called": "get_envoyer_des_unites_options",
             "ussd_code_to_invoke": "*111#",
             "option1": "7",
             "option2": "numero",
             "option3": "montant",
             "option4": "password"
         }
-        return json.dumps(options)
+        return options
 
     def get_solde_unites_options(self):
         options = {
-            "function called": "get_solde_unites_options",
+            "version": self.get_version_options(),
+            "function_called": "get_solde_unites_options",
             "ussd_code_to_invoke": "*1000#"
         }
-        return json.dumps(options)
+        return options
 
     def get_solde_minutes_options(self):
         options = {
-            "function called": "get_solde_minutes_options",
+            "version": self.get_version_options(),
+            "function_called": "get_solde_minutes_options",
             "ussd_code_to_invoke": "*111*20#",
             "option1": "1"
         }
-        return json.dumps(options)
+        return options
 
     def get_solde_internet_options(self):
         options = {
-            "function called": "get_solde_internet_options",
+            "version": self.get_version_options(),
+            "function_called": "get_solde_internet_options",
             "ussd_code_to_invoke": "*111*20#",
             "option1": "2"
         }
-        return json.dumps(options)
+        return options
 
     def get_historique_options(self):
         options = {
-            "function called": "get_historique_options",
+            "version": self.get_version_options(),
+            "function_called": "get_historique_options",
             "phone_number": "Afrimoney",
             "regex_recu": "recu(.*?)(USD|CDF)(.*?)[.]",
             "regex_envoi": "envoye(.*?)(USD|CDF)(.*?)[.]",
             "regex_retire": "retire(.*?)(USD|CDF)(.*?)[.]"
         }
-        return json.dumps(options)
+        return options
 
     def get_getFrais_options(self):
         options = {
-            "function called": "get_getFrais_options",
+            "version": self.get_version_options(),
+            "function_called": "get_getFrais_options",
             "ecart_usd1": "9",
             "ecart_usd2": "19",
             "ecart_usd3": "29",
@@ -248,11 +254,12 @@ class Africell:
             "cdf_frais7": "1500",
             "cdf_frais8": "2500"
         }
-        return json.dumps(options)
+        return options
 
     def get_payerFrais_options(self):
         options = {
-            "function called": "get_payerFrais_options",
+            "version": self.get_version_options(),
+            "function_called": "get_payerFrais_options",
             "ussd_code_to_invoke": "*1020#",
             "option1": "devise",
             "option2": "1",
@@ -260,6 +267,37 @@ class Africell:
             "option4": "montant",
             "option5": "password"
         }
-        return json.dumps(options)
+        return options
+
+    def get_version_options(self):
+        global version
+        return version
+
+    def get_all_options(self):
+        global version
+        all_options = {
+            "version": self.get_version_options(),
+            "get_retrait_options": self.get_retrait_options(),
+            "get_envoi_options": self.get_envoi_options(),
+            "get_verificationTauxEtExecution_options": self.get_verificationTauxEtExecution_options(),
+            "get_achat_credit_options": self.get_achat_credit_options(),
+            "get_soldes_options": self.get_soldes_options(),
+            "get_soldeMoney_options": self.get_soldeMoney_options(),
+            "get_cleanSoldeStr_options": self.get_cleanSoldeStr_options(),
+            "get_forcer_demande_solde_options": self.get_forcer_demande_solde_options(),
+            "get_forcer_demande_solde_cdf_options": self.get_forcer_demande_solde_cdf_options(),
+            "get_achat_forfait_appel_options": self.get_achat_forfait_appel_options(),
+            "get_achat_forfait_internet_options": self.get_achat_forfait_internet_options(),
+            "get_partager_vos_megas_options": self.get_partager_vos_megas_options(),
+            "get_partager_vos_minutes_options": self.get_partager_vos_minutes_options(),
+            "get_envoyer_des_unites_options": self.get_envoyer_des_unites_options(),
+            "get_solde_unites_options": self.get_solde_unites_options(),
+            "get_solde_minutes_options": self.get_solde_minutes_options(),
+            "get_solde_internet_options": self.get_solde_internet_options(),
+            "get_historique_options": self.get_historique_options(),
+            "get_getFrais_options": self.get_getFrais_options(),
+            "get_payerFrais_options": self.get_payerFrais_options()
+        }
+        return all_options
 
 # NAY

@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import importlib
 
 app = Flask(__name__)
-app_latest_version = '1.1.13'
+app_latest_version = '1.0.0'
 
 @app.route('/latest_version')
 def latest_version():
@@ -44,7 +44,7 @@ def get_operation_options():
         # Call the method and get the result
         result = method_to_call()
 
-        return jsonify({"result": result})
+        return jsonify(result)
     
     except ModuleNotFoundError:
         return jsonify({"error": f"Module '{sim}' not found"}), 404
